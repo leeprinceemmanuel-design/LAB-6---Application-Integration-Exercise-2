@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FakeStoreAPI Product Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Popshop Logo" class="store-logo">
+        <h1>FakeStoreAPI Product Dashboard</h1>
+    </header>
+
+    <main>
+        <h2>All Products</h2>
+        <div class="table-container">
+            <table id="productTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Price</th>
+                        <th>Category</th>
+                        <th>Image</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    </tbody>
+            </table>
+        </div>
+    </main>
+
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Product Title</h2>
+                <span class="close-btn">&times;</span>
+            </div>
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="Product">
+                <div class="modal-details">
+                    <p><strong>Price:</strong> $<span id="modalPrice"></span></p>
+                    <p><strong>Category:</strong> <span id="modalCategory"></span></p>
+                    <p><strong>Rating:</strong> <span id="modalRating"></span> (<span id="modalCount"></span> reviews)</p>
+                    <p id="modalDescription" class="description-text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
